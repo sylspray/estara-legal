@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Estara</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #F2D4DC 0%, #E8D5F0 50%, #D5E5F5 100%);
+      font-family: system-ui, -apple-system, sans-serif;
+      color: #2d2d2d;
+      padding: 40px 20px 80px;
+    }
+
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 48px 48px 56px;
+      box-shadow: 0 8px 40px rgba(140, 90, 120, 0.12);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #E8829A, #c469a0);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .brand-name {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 26px;
+      font-weight: bold;
+      color: #E8829A;
+      letter-spacing: -0.3px;
+    }
+
+    h1 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 28px;
+      font-weight: bold;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #E8829A;
+      margin-top: 36px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: #3a3a3a;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    li { margin-bottom: 4px; }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, #E8829A33, #c469a033, transparent);
+      margin: 32px 0 0;
+    }
+
+    .disclaimer-box {
+      background: linear-gradient(135deg, #fff0f3, #f8f0ff);
+      border-left: 4px solid #E8829A;
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin-top: 12px;
+    }
+
+    .disclaimer-box p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    a { color: #E8829A; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .contact-link {
+      display: inline-block;
+      margin-top: 10px;
+      background: linear-gradient(135deg, #E8829A, #c469a0);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-link:hover { text-decoration: none; opacity: 0.9; }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      font-size: 13px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @media (max-width: 560px) {
+      .card { padding: 28px 22px 40px; }
+      h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <div class="brand">
+      <div class="brand-icon">🥗</div>
+      <span class="brand-name">Estara</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: May 12, 2026</p>
+
+    <p>This Privacy Policy describes how <strong>Estara</strong>, developed by <strong>Estara Team</strong>, collects, uses, and protects your personal information when you use the Estara iOS application.</p>
+
+    <div class="divider"></div>
+
+    <h2>1. Information We Collect</h2>
+    <p><strong>Account &amp; Profile Data</strong></p>
+    <ul>
+      <li>Email address and password (via Supabase Auth)</li>
+      <li>Name, gender, age</li>
+      <li>Height, weight, and goal weight</li>
+      <li>Activity level and daily calorie target</li>
+      <li>Dietary restrictions and preferences</li>
+    </ul>
+
+    <p style="margin-top:14px;"><strong>Meal &amp; Nutrition Data</strong></p>
+    <ul>
+      <li>Meal descriptions and food entries you log</li>
+      <li>Recipes saved or generated within the app</li>
+      <li>Shopping lists created by you</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To provide personalized meal planning and nutrition tracking</li>
+      <li>To calculate and display calorie and macro estimates</li>
+      <li>To generate recipe suggestions tailored to your dietary preferences</li>
+      <li>To maintain your shopping lists across sessions</li>
+      <li>To authenticate your account securely</li>
+    </ul>
+
+    <h2>3. AI Processing (Anthropic)</h2>
+    <p>Estara uses the Anthropic API (Claude Haiku model) to analyze meal descriptions and generate nutrition data and recipes. When you log a meal or request a recipe, the relevant text is sent to Anthropic's servers for processing. This data is used solely to generate your nutrition analysis and is not used to train Anthropic's models under their standard API terms. Please review <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a> for more detail.</p>
+
+    <h2>4. Data Storage</h2>
+    <p>All user data — including your profile, meal logs, recipes, and shopping lists — is stored securely in a <strong>Supabase</strong> database with row-level security (RLS) enabled. This means your data is only accessible to your authenticated account. Supabase uses industry-standard encryption at rest and in transit. Please review <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's Privacy Policy</a> for more detail.</p>
+
+    <h2>5. Data Sharing</h2>
+    <ul>
+      <li><strong>We do not sell your data</strong> to any third parties, ever.</li>
+      <li>Meal text is sent to Anthropic solely to perform nutrition analysis on your behalf.</li>
+      <li>No advertising networks or data brokers receive your information.</li>
+      <li>We do not share your data with any other third parties except as required by law.</li>
+    </ul>
+
+    <h2>6. Data Retention &amp; Deletion</h2>
+    <p>Your data is retained for as long as your account is active. You may request complete deletion of your account and all associated data at any time by contacting us at the email below. Upon verified request, all profile data, meal logs, recipes, and shopping lists will be permanently deleted from our systems.</p>
+
+    <h2>7. Health Data Disclaimer</h2>
+    <div class="disclaimer-box">
+      <p><strong>Estara is not a medical device and does not provide medical advice.</strong> Calorie estimates, macro breakdowns, and nutrition information provided by the app are approximate and generated by AI. They should not be used to diagnose, treat, cure, or prevent any health condition. Always consult a qualified healthcare professional or registered dietitian before making significant changes to your diet, especially if you have a medical condition.</p>
+    </div>
+
+    <h2>8. Children's Privacy</h2>
+    <p>Estara is not intended for children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us and we will delete it promptly.</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the effective date at the top of this page. Continued use of Estara after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>10. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy, or to request account deletion, please contact:</p>
+    <p style="margin-top:12px;"><strong>Estara Team</strong><br />
+    <a href="mailto:sylspray@gmail.com">sylspray@gmail.com</a></p>
+    <a class="contact-link" href="mailto:sylspray@gmail.com">📧 Contact Support</a>
+
+    <div class="footer">
+      &copy; 2026 Estara Team · All rights reserved
+    </div>
+
+  </div>
+</body>
+</html>
